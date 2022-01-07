@@ -61,3 +61,16 @@ dependescies에 있는 것들에 대해서 npm i를 해주면 전부 node_module
 
 웹팩의 기능중에는 source map이라는 기능이 있는데 이를 devtool : 'sourcemap'으로 설정해주면 컴파일된 코드를 원래코드로 매핑해주게 된다. 이는 트래킹을 위해사용되며 여러 js파일들이 하나의 번들파일로 합쳐졌을때 에러를 보다 빠르고 직관적이게 찾을 수 있게된다.
 
+webpack.config.js파일에서 entry(진입점)은 2개 이상이 될 수도 있다. 따라서 bundle파일이 진입점 수에맞게 생성된다.  
+
+webpack.config.js파일의 output부분에서 파일이름에 이름값과 청크해쉬값 두개를 넣어주는게 일반적이다. ex) [name].[chunkhash].bundle.js
+
+css loader의 역할 : js파일에서 css파일을 import했을때 웹팩의 css loader는 이를 알아서 적용시켜준다.
+
+loader를 이용하기위해선 module 밑에 rules가 필요하다. rules밑에 여러개의 loader에대한 규칙을 설정해주는데 test는 적용할 파일들, use에는 사용할 loader 커멘드를 입력해주면 된다.
+
+css loader의 역할은 css코드를 웹팩안에 넣어주는 것이고 style loader의 역할은 웹팩안의 css코드를 head의 style에 위치시키는 것이다. 
+
+loader가 여러개 있을때 순서도 중요하다. loader판별은 오른쪽에서 왼쪽으로 인식하기 때문에 개발자의 의도에 맞춰 정의하는 것이 중요하다.
+
+
