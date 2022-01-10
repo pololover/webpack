@@ -108,3 +108,5 @@ devserver에 overlay는 빌드시 에러나 경고를 브라우져 화면에 표
 
 webpack의 resolve 속성은 파일을 해석할때 편의성을 더한 기능이다. alias는 별칭, extensions은 뒤에 확장자를 붙이지않아도 해석할 수 있도록 하는 것.
 
+vue cli3버전에서는 webpack.config.js파일이 없기에 vue.config.js파일에서 별도로 선언해주어야한다.
+
