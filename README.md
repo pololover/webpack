@@ -8,4 +8,4 @@
 
 
 ## 웹팩 정리 📙
-## [웹팩](https://pololove.tistory.com/86?category=993586)
+## [웹팩을 정리하는 블로그](https://pololove.tistory.com/86?category=993586)
